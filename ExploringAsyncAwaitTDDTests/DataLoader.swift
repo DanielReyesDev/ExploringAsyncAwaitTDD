@@ -11,7 +11,7 @@ struct DataLoader {
     
     private let bundle: Bundle
     
-    init(identifier: String = "com.walmart.AsyncAwaitExample") {
+    init(identifier: String = "com.walmart.ExploringAsyncAwaitTDD") {
         self.bundle = Bundle(identifier: identifier)!
     }
     
