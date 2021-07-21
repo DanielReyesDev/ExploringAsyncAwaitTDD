@@ -11,6 +11,9 @@
 		68B1307626A8B5D800536639 /* ExploringAsyncAwaitTDD.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B1306A26A8B5D700536639 /* ExploringAsyncAwaitTDD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68B1308026A8B64D00536639 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1307F26A8B64D00536639 /* DataLoader.swift */; };
 		68B1308226A8B66200536639 /* languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 68B1308126A8B66200536639 /* languages.json */; };
+		68B1308626A8BA4B00536639 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1308526A8BA4B00536639 /* NetworkClientTests.swift */; };
+		68B1308826A8C73300536639 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1308726A8C73300536639 /* NetworkClient.swift */; };
+		68B1308926A8C7F300536639 /* languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 68B1308126A8B66200536639 /* languages.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,8 @@
 		68B1306F26A8B5D800536639 /* ExploringAsyncAwaitTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploringAsyncAwaitTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B1307F26A8B64D00536639 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		68B1308126A8B66200536639 /* languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = languages.json; sourceTree = "<group>"; };
+		68B1308526A8BA4B00536639 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		68B1308726A8C73300536639 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				68B1306A26A8B5D700536639 /* ExploringAsyncAwaitTDD.h */,
+				68B1308726A8C73300536639 /* NetworkClient.swift */,
 			);
 			path = ExploringAsyncAwaitTDD;
 			sourceTree = "<group>";
@@ -79,6 +85,7 @@
 		68B1307326A8B5D800536639 /* ExploringAsyncAwaitTDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				68B1308526A8BA4B00536639 /* NetworkClientTests.swift */,
 				68B1308126A8B66200536639 /* languages.json */,
 				68B1307F26A8B64D00536639 /* DataLoader.swift */,
 			);
@@ -147,6 +154,7 @@
 				TargetAttributes = {
 					68B1306626A8B5D700536639 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					68B1306E26A8B5D800536639 = {
 						CreatedOnToolsVersion = 13.0;
@@ -177,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B1308926A8C7F300536639 /* languages.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B1308826A8C73300536639 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B1308026A8B64D00536639 /* DataLoader.swift in Sources */,
+				68B1308626A8BA4B00536639 /* NetworkClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +353,7 @@
 		68B1307A26A8B5D800536639 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -362,6 +374,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -370,6 +383,7 @@
 		68B1307B26A8B5D800536639 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -398,6 +412,7 @@
 		68B1307D26A8B5D800536639 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UDPJ785EBR;
@@ -419,6 +434,7 @@
 		68B1307E26A8B5D800536639 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UDPJ785EBR;

@@ -25,4 +25,3 @@ struct DataLoader {
         return data
     }
 }
-
