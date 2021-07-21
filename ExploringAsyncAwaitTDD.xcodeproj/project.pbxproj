@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		68B1307026A8B5D800536639 /* ExploringAsyncAwaitTDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B1306726A8B5D700536639 /* ExploringAsyncAwaitTDD.framework */; };
-		68B1307526A8B5D800536639 /* ExploringAsyncAwaitTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1307426A8B5D800536639 /* ExploringAsyncAwaitTDDTests.swift */; };
 		68B1307626A8B5D800536639 /* ExploringAsyncAwaitTDD.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B1306A26A8B5D700536639 /* ExploringAsyncAwaitTDD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68B1308026A8B64D00536639 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1307F26A8B64D00536639 /* DataLoader.swift */; };
+		68B1308226A8B66200536639 /* languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 68B1308126A8B66200536639 /* languages.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +27,8 @@
 		68B1306726A8B5D700536639 /* ExploringAsyncAwaitTDD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExploringAsyncAwaitTDD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B1306A26A8B5D700536639 /* ExploringAsyncAwaitTDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploringAsyncAwaitTDD.h; sourceTree = "<group>"; };
 		68B1306F26A8B5D800536639 /* ExploringAsyncAwaitTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploringAsyncAwaitTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68B1307426A8B5D800536639 /* ExploringAsyncAwaitTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploringAsyncAwaitTDDTests.swift; sourceTree = "<group>"; };
+		68B1307F26A8B64D00536639 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		68B1308126A8B66200536639 /* languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = languages.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,8 @@
 		68B1307326A8B5D800536639 /* ExploringAsyncAwaitTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				68B1307426A8B5D800536639 /* ExploringAsyncAwaitTDDTests.swift */,
+				68B1308126A8B66200536639 /* languages.json */,
+				68B1307F26A8B64D00536639 /* DataLoader.swift */,
 			);
 			path = ExploringAsyncAwaitTDDTests;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B1308226A8B66200536639 /* languages.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B1307526A8B5D800536639 /* ExploringAsyncAwaitTDDTests.swift in Sources */,
+				68B1308026A8B64D00536639 /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
